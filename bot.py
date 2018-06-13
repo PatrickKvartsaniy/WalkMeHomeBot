@@ -26,3 +26,13 @@ class Bot:
             last_update = get_result[len(get_result)]
 
         return last_update
+
+    def factorial(self,n):
+        if n == 0:
+            return 1
+        return n * self.factorial(n-1)
+
+    def fibonacci(self,n):
+        if n == 0:
+            return 1
+        return n + self.factorial(n-1)
